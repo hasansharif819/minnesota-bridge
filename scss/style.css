@@ -1,0 +1,43 @@
+#homepage {
+  background-image: url("../images/wed1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+#homepage div {
+  position: absolute;
+  text-align: center;
+  height: 200px;
+  max-width: 700px;
+  margin-left: 350px;
+  margin-top: 400px;
+  box-shadow: inset 0 0 2000px white;
+}
+#homepage div p {
+  margin-top: 20px;
+}
+#homepage div hr {
+  width: 150px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gray;
+}
+#homepage div h2 {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+#homepage div #blending {
+  margin-top: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+#homepage div button {
+  margin-top: 10px;
+  padding: 5px 30px;
+}/*# sourceMappingURL=style.css.map */

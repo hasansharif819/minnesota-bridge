@@ -1,0 +1,77 @@
+@mixin horizontal {
+    width: 150px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Home page
+#minnesota {
+    a {
+        text-decoration: none;
+        color: black;
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        hr {
+            @include horizontal;
+        }
+    }
+}
+
+#navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    #navbarNav {
+        margin-left: 370px;
+        ul {
+            text-align: center;
+    
+            li {
+                display: inline;
+                padding-right: 5px;
+                color: black;
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    #coupleIcon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: hotpink;
+        font-weight: 100;
+        font-size: small;
+        p {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: gray;
+    color: white;
+}

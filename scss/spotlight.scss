@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weddingView {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 200px 20px;
+    button {
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+.prosImg {
+    background-color: rgb(71, 70, 70);
+    margin: 0 200px;
+    height: 500px;
+    background-image: url('../images/couple.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // filter: brightness(70%);
+
+    div {
+        color: white;
+        position: absolute;
+        text-align: center;
+        max-width: 700px;
+        margin-left: 250px;
+        margin-top: 350px;
+        hr {
+            margin-bottom: 5px;
+        }
+        h2 {
+            margin-bottom: 5px;
+        }
+        p {
+            margin-top: 5px;
+        }
+    }
+}
+
+.getInspired {
+    margin-top: 50px;
+    background-color: wheat;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #followIcon {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        div {
+            display: flex;justify-content: space-between;
+            
+        }
+    }
+    
+    .inputType {
+        margin-top: 20px;
+        .no-outline {
+            border: 5px solid rgb(227, 230, 230);
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: groove;
+            background-color: wheat;
+        }
+    }
+}
