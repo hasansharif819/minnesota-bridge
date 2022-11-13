@@ -22,7 +22,7 @@
   background-image: url("../images/fruits.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(70%);
+  filter: brightness(85%);
 }
 .prosImg div {
   color: white;
@@ -44,7 +44,7 @@
 
 .customWedding {
   margin-top: 50px;
-  background-color: wheat;
+  background-color: rgb(252, 208, 215);
   padding: 50px;
 }
 .customWedding div {
@@ -62,7 +62,7 @@
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  background-color: wheat;
+  background-color: rgb(252, 208, 215);
 }
 .customWedding .inputType button {
   padding: 5px 20px;

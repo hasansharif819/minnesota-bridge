@@ -70,8 +70,18 @@
 .footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    padding-top: 30px;
     height: 200px;
-    background-color: gray;
+    background-color: rgb(33, 33, 33);
     color: white;
+    div {
+        h2{
+            font-size: medium;
+            text-align: center;
+        }
+        h3, h4 {
+            font-size: small;
+        }
+        
+    }
 }

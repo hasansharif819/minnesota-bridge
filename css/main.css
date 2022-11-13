@@ -62,10 +62,17 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding-top: 30px;
   height: 200px;
-  background-color: gray;
+  background-color: rgb(33, 33, 33);
   color: white;
+}
+.footer div h2 {
+  font-size: medium;
+  text-align: center;
+}
+.footer div h3, .footer div h4 {
+  font-size: small;
 }
 
 #homepage {
