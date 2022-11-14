@@ -74,3 +74,51 @@
 .footer div h3, .footer div h4 {
   font-size: small;
 }
+
+@media screen and (max-width: 400px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar #navbarNav {
+    text-align: left;
+    margin-left: 0;
+  }
+  #navbar #navbarNav ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar #navbarNav ul li {
+    display: inline;
+    margin-left: 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    gap: 10px;
+    background-color: gray;
+  }
+  .footer div {
+    padding-left: 50px;
+  }
+  .footer div h2 {
+    font-size: medium;
+  }
+  .footer div h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer div h3 {
+    font-size: large;
+  }
+  .footer div hr {
+    width: 150px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    width: 150px;
+  }
+}

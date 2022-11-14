@@ -86,3 +86,42 @@
         }
     }
 }
+
+@media screen and (max-width:400px) {
+    #inspiration {
+        height: 150px;
+        #text {
+            h2 {
+                font-size: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            hr {
+                width: 200px;
+            }
+            #teamHorizontal {
+                width: 300px;
+            }
+            p {
+                span {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .inspirationView {
+        margin: 50px 0 20px 0;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        .singleCard {
+            img {
+                width: 100%;
+            }
+            div {
+                margin-left: 5px;
+            }
+        }
+    }
+}

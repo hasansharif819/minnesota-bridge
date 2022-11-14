@@ -1,6 +1,10 @@
 #homepage {
   position: relative;
 }
+#homepage img {
+  height: 600px;
+  width: 100%;
+}
 #homepage div {
   height: 200px;
   max-width: 700px;
@@ -35,4 +39,34 @@
 #homepage div button {
   margin-top: 10px;
   padding: 5px 30px;
+}
+
+@media screen and (max-width: 400px) {
+  #homepage {
+    position: relative;
+  }
+  #homepage img {
+    height: 300px;
+    width: 400px;
+    position: relative;
+  }
+  #homepage div {
+    height: 150px;
+    width: 350px;
+    position: absolute;
+    left: 20px;
+    top: 120px;
+  }
+  #homepage div p {
+    margin: 0;
+  }
+  #homepage div h2 {
+    font-size: medium;
+  }
+  #homepage div #blending {
+    font-size: small;
+  }
+  #homepage div button {
+    padding: 2px 10px;
+  }
 }

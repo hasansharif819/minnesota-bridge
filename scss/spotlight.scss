@@ -18,6 +18,10 @@
 .prosImg {
     position: relative;
     margin: 0 200px;
+    // img {
+    //     height: 500px;
+    //     width: 100%;
+    // }
     div {
         color: white;
         position: absolute;
@@ -69,6 +73,54 @@
             border-left-style: hidden;
             border-bottom-style: groove;
             background-color: rgb(250, 207, 214);
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .weddingView {
+        margin: 50px 0 20px 0;
+    }
+    .prosImg {
+        margin: 0;
+        img {
+            height: 300px;
+            width: 100%;
+        }
+        div {
+            color: white;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            text-align: center;
+            max-width: 500px;
+            hr {
+                margin-bottom: 5px;
+                width: 200px;
+                margin-left: 30px;
+            }
+            h2 {
+                margin-bottom: 5px;
+                font-size: medium;
+            }
+            p {
+                margin-top: 5px;
+                font-size: small;
+            }
+        }
+    }
+    .getInspired {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .custom {
+            p {
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+        .chevron {
+            visibility: hidden;
         }
     }
 }

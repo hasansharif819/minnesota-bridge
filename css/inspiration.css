@@ -83,3 +83,36 @@
   font-family: "Times New Roman", Times, serif;
   margin: 10px 0;
 }
+
+@media screen and (max-width: 400px) {
+  #inspiration {
+    height: 150px;
+  }
+  #inspiration #text h2 {
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #inspiration #text hr {
+    width: 200px;
+  }
+  #inspiration #text #teamHorizontal {
+    width: 300px;
+  }
+  #inspiration #text p span {
+    padding: 5px;
+  }
+  .inspirationView {
+    margin: 50px 0 20px 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card .singleCard img {
+    width: 100%;
+  }
+  .card .singleCard div {
+    margin-left: 5px;
+  }
+}

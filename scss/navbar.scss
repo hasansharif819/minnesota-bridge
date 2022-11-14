@@ -85,3 +85,47 @@
         
     }
 }
+
+@media screen and (max-width:400px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        #navbarNav {
+            text-align: left;
+            margin-left: 0;
+            ul {
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                li {
+                    display: inline;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        gap: 10px;
+        background-color: gray;
+        div {
+            padding-left: 50px;
+            h2 {
+                font-size: medium;
+            }
+            h1 {
+                font-size: 20px;
+                text-align: center;
+            }
+            h3 {
+                font-size: large;
+            }
+            hr {
+                @include horizontal;
+                width: 150px;
+            }
+            }
+        } 
+}
