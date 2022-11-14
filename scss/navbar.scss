@@ -33,12 +33,24 @@
     }
 }
 
-#navbar {
+nav {
     display: flex;
     justify-content:space-around;
     align-items: center;
     #navbarNav {
         margin-left: 370px;
+        #check {
+            display: none;
+        }
+        .checkbtn {
+            font-size: 30px;
+            color: black;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
         ul {
             text-align: center;
     
@@ -87,23 +99,54 @@
 }
 
 @media screen and (max-width:400px) {
-    #navbar {
+    #minnesota {
+        position: absolute;
+        top: 5px;
+    }
+    nav {
         display: flex;
         flex-direction: column;
         #navbarNav {
             text-align: left;
             margin-left: 0;
+            .checkbtn {
+                display: block;
+                margin-left: 330px;
+            }
             ul {
-                text-align: left;
-                display: flex;
-                flex-direction: column;
+                position: fixed;
+                width: 100%;
+                top: 50px;
+                right: -100%;
+                text-align: center;
+                transition: all .5s;
                 li {
-                    display: inline;
-                    margin-left: 0;
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 0;
+                    a {
+                        font-size: 20px;
+                        color: white;
+                        font-size: bold;
+                    }
                 }
             }
+            #check:checked ~ ul {
+                right: 0;
+            }
+        }
+        #coupleIcon {
+            position: absolute;
+            top: 30px;
+            right: 100px;
         }
     }
+    section {
+        background: url(../images/DESSSERTS.webp);
+        background-size: cover;
+        height: calc(30vh - 80px);
+    }
+    
     .footer {
         display: flex;
         flex-direction: column;

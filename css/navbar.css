@@ -26,27 +26,39 @@
   background-color: gray;
 }
 
-#navbar {
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#navbar #navbarNav {
+nav #navbarNav {
   margin-left: 370px;
 }
-#navbar #navbarNav ul {
+nav #navbarNav #check {
+  display: none;
+}
+nav #navbarNav .checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+nav #navbarNav ul {
   text-align: center;
 }
-#navbar #navbarNav ul li {
+nav #navbarNav ul li {
   display: inline;
   padding-right: 5px;
   color: black;
 }
-#navbar #navbarNav ul li a {
+nav #navbarNav ul li a {
   text-decoration: none;
   color: black;
 }
-#navbar #coupleIcon {
+nav #coupleIcon {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -54,7 +66,7 @@
   font-weight: 100;
   font-size: small;
 }
-#navbar #coupleIcon p {
+nav #coupleIcon p {
   display: flex;
   justify-content: space-between;
 }
@@ -76,22 +88,52 @@
 }
 
 @media screen and (max-width: 400px) {
-  #navbar {
+  #minnesota {
+    position: absolute;
+    top: 5px;
+  }
+  nav {
     display: flex;
     flex-direction: column;
   }
-  #navbar #navbarNav {
+  nav #navbarNav {
     text-align: left;
     margin-left: 0;
   }
-  #navbar #navbarNav ul {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+  nav #navbarNav .checkbtn {
+    display: block;
+    margin-left: 330px;
   }
-  #navbar #navbarNav ul li {
-    display: inline;
-    margin-left: 0;
+  nav #navbarNav ul {
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav #navbarNav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 0;
+  }
+  nav #navbarNav ul li a {
+    font-size: 20px;
+    color: white;
+    font-size: bold;
+  }
+  nav #navbarNav #check:checked ~ ul {
+    right: 0;
+  }
+  nav #coupleIcon {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+  }
+  section {
+    background: url(../images/DESSSERTS.webp);
+    background-size: cover;
+    height: calc(30vh - 80px);
   }
   .footer {
     display: flex;
