@@ -1,12 +1,6 @@
 #homepage {
   position: relative;
 }
-#homepage img {
-  height: 600px;
-  width: 95vw;
-  position: relative;
-  left: 25px;
-}
 #homepage div {
   height: 200px;
   max-width: 700px;
