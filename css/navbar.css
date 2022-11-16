@@ -57,6 +57,7 @@ nav .navbar-links ul li:hover {
 nav #coupleIcon {
   position: absolute;
   right: 50px;
+  top: 3.8rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
