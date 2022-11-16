@@ -44,10 +44,11 @@
 
 .customWedding {
   margin-top: 50px;
-  background-color: rgb(252, 208, 215);
+  background-color: rgb(244, 216, 221);
   padding: 50px;
 }
 .customWedding div {
+  font-size: 23px;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -62,10 +63,11 @@
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  background-color: rgb(252, 208, 215);
+  background-color: rgb(244, 216, 221);
 }
 .customWedding .inputType button {
   padding: 5px 20px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 400px) {
@@ -73,7 +75,7 @@
     margin: 50px 0 20px 0;
   }
   .weddingView h1 {
-    font-size: larger;
+    font-size: 20px;
   }
   .prosImg {
     position: relative;
@@ -102,6 +104,9 @@
   .prosImg div p {
     margin-top: 5px;
     font-size: small;
+  }
+  .customWedding .custom p {
+    font-size: 15px;
   }
   .customWedding .inputType {
     display: flex;

@@ -19,17 +19,18 @@
   margin-bottom: 10px;
 }
 #minnesota a hr {
-  width: 150px;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
   background-color: gray;
+  width: 150px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 10px;
 }
 nav #navbarNav {
   margin-left: 370px;
@@ -89,20 +90,35 @@ nav #coupleIcon p {
 
 @media screen and (max-width: 400px) {
   #minnesota {
-    position: absolute;
+    position: relative;
+    left: -120px;
     top: 5px;
+  }
+  #minnesota a h2, #minnesota a h1 {
+    font-size: 15px;
+  }
+  #minnesota a hr {
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    width: 100px;
   }
   nav {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   nav #navbarNav {
     text-align: left;
     margin-left: 0;
+    position: relative;
   }
   nav #navbarNav .checkbtn {
     display: block;
-    margin-left: 330px;
+    position: relative;
+    left: 160px;
+    top: -60px;
   }
   nav #navbarNav ul {
     position: fixed;
@@ -110,16 +126,15 @@ nav #coupleIcon p {
     top: 50px;
     right: -100%;
     text-align: center;
-    transition: all 0.5s;
+    transition: all 0.2s;
+    margin-top: 10px;
   }
   nav #navbarNav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 0;
   }
   nav #navbarNav ul li a {
-    font-size: 20px;
-    color: white;
+    font-size: 15px;
+    color: black;
     font-size: bold;
   }
   nav #navbarNav #check:checked ~ ul {
@@ -127,18 +142,18 @@ nav #coupleIcon p {
   }
   nav #coupleIcon {
     position: absolute;
-    top: 30px;
+    top: -40px;
+    font-size: small;
     right: 100px;
   }
   section {
-    background: url(../images/DESSSERTS.webp);
-    background-size: cover;
-    height: calc(30vh - 80px);
+    background-color: white;
+    height: 50px;
   }
   .footer {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     gap: 10px;
     background-color: rgb(117, 85, 85);
   }
@@ -156,7 +171,6 @@ nav #coupleIcon p {
     font-size: large;
   }
   .footer div hr {
-    width: 150px;
     height: 2px;
     margin-left: auto;
     margin-right: auto;

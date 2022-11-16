@@ -1,5 +1,4 @@
 @mixin horizontal {
-    width: 150px;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +11,7 @@
     box-sizing: border-box;
 }
 
-//Home page
+//Navbar
 #minnesota {
     a {
         text-decoration: none;
@@ -29,6 +28,7 @@
         }
         hr {
             @include horizontal;
+            width: 150px;
         }
     }
 }
@@ -53,7 +53,6 @@ nav {
         }
         ul {
             text-align: center;
-    
             li {
                 display: inline;
                 padding-right: 5px;
@@ -77,6 +76,7 @@ nav {
             justify-content: space-between;
         }
     }
+    padding-bottom: 10px;
 }
 
 .footer {
@@ -100,18 +100,32 @@ nav {
 
 @media screen and (max-width:400px) {
     #minnesota {
-        position: absolute;
+        position: relative;
+        left: -120px;
         top: 5px;
+        a {
+            h2, h1 {
+                font-size: 15px;
+            }
+            hr {
+                @include horizontal;
+                width: 100px;
+            }
+        }
     }
     nav {
         display: flex;
         flex-direction: column;
+        position: relative;
         #navbarNav {
             text-align: left;
             margin-left: 0;
+            position: relative;
             .checkbtn {
                 display: block;
-                margin-left: 330px;
+                position: relative;
+                left: 160px;
+                top: -60px;
             }
             ul {
                 position: fixed;
@@ -119,14 +133,13 @@ nav {
                 top: 50px;
                 right: -100%;
                 text-align: center;
-                transition: all .5s;
+                transition: all .2s;
+                margin-top: 10px;
                 li {
                     display: block;
-                    margin: 50px 0;
-                    line-height: 0;
                     a {
-                        font-size: 20px;
-                        color: white;
+                        font-size: 15px;
+                        color: black;
                         font-size: bold;
                     }
                 }
@@ -137,20 +150,20 @@ nav {
         }
         #coupleIcon {
             position: absolute;
-            top: 30px;
+            top: -40px;
+            font-size: small;
             right: 100px;
         }
     }
     section {
-        background: url(../images/DESSSERTS.webp);
-        background-size: cover;
-        height: calc(30vh - 80px);
+        background-color: white;
+        height: 50px;
     }
     
     .footer {
         display: flex;
         flex-direction: column;
-        height: 80vh;
+        height: 100vh;
         gap: 10px;
         background-color: rgb(117, 85, 85);
         div {
