@@ -11,6 +11,7 @@
 #minnesota a h2 {
   text-align: center;
   margin-top: 10px;
+  font-size: large;
 }
 #minnesota a h1 {
   text-align: center;
@@ -23,43 +24,39 @@
   margin-left: auto;
   margin-right: auto;
   background-color: gray;
-  width: 150px;
+  width: 130px;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
-}
-nav #navbarNav {
-  margin-left: 370px;
-}
-nav #navbarNav #check {
-  display: none;
-}
-nav #navbarNav .checkbtn {
-  font-size: 30px;
   color: black;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
+  width: 100%;
+  padding-bottom: 0.5rem;
 }
-nav #navbarNav ul {
-  text-align: center;
+nav .navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-shadow: inset 50px 50px 500px white;
 }
-nav #navbarNav ul li {
-  display: inline;
-  padding-right: 5px;
-  color: black;
+nav .navbar-links ul li {
+  list-style: none;
 }
-nav #navbarNav ul li a {
+nav .navbar-links ul li a {
   text-decoration: none;
   color: black;
+  padding: 0.3rem;
+  display: block;
+}
+nav .navbar-links ul li:hover {
+  background-color: rgb(228, 223, 216);
+  border-radius: 10px;
 }
 nav #coupleIcon {
+  position: absolute;
+  right: 50px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -70,6 +67,21 @@ nav #coupleIcon {
 nav #coupleIcon p {
   display: flex;
   justify-content: space-between;
+}
+nav .toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+nav .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .footer {
@@ -88,11 +100,11 @@ nav #coupleIcon p {
   font-size: small;
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   #minnesota {
-    position: relative;
-    left: -120px;
-    top: 5px;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
   }
   #minnesota a h2, #minnesota a h1 {
     font-size: 15px;
@@ -104,58 +116,45 @@ nav #coupleIcon p {
     background-color: gray;
     width: 100px;
   }
-  nav {
+  nav .toggle-button {
     display: flex;
-    flex-direction: column;
-    position: relative;
   }
-  nav #navbarNav {
-    text-align: left;
-    margin-left: 0;
-    position: relative;
-  }
-  nav #navbarNav .checkbtn {
-    display: block;
-    position: relative;
-    left: 160px;
-    top: -60px;
-  }
-  nav #navbarNav ul {
-    position: fixed;
+  nav .navbar-links {
+    display: none;
     width: 100%;
-    top: 50px;
-    right: -100%;
+    position: relative;
+  }
+  nav .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    z-index: 1;
+    font-size: larger;
+    font-weight: 700;
+  }
+  nav .navbar-links ul li {
     text-align: center;
-    transition: all 0.2s;
-    margin-top: 10px;
   }
-  nav #navbarNav ul li {
-    display: block;
-  }
-  nav #navbarNav ul li a {
-    font-size: 15px;
+  nav .navbar-links ul li a {
     color: black;
-    font-size: bold;
   }
-  nav #navbarNav #check:checked ~ ul {
-    right: 0;
+  nav .navbar-links.active {
+    display: flex;
   }
   nav #coupleIcon {
     position: absolute;
-    top: -40px;
+    top: 1rem;
+    right: 7rem;
     font-size: small;
-    right: 100px;
-  }
-  section {
-    background-color: white;
-    height: 50px;
   }
   .footer {
-    display: flex;
+    padding-top: 5rem;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
     gap: 10px;
-    background-color: rgb(117, 85, 85);
+    background-color: rgb(68, 67, 67);
   }
   .footer div {
     padding-left: 5px;

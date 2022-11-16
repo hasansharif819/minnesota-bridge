@@ -43,7 +43,9 @@
 
 @media screen and (max-width: 400px) {
   #homepage {
+    max-width: 100%;
     position: relative;
+    top: 3.5rem;
   }
   #homepage img {
     height: 500px;
@@ -54,7 +56,7 @@
     height: 190px;
     width: 300px;
     position: absolute;
-    left: 40px;
+    left: 50px;
     top: 250px;
   }
   #homepage div p {

@@ -80,6 +80,10 @@
 @media screen and (max-width:400px) {
     .weddingView {
         margin: 50px 0 20px 0;
+        padding-top: 20px;
+        h1 {
+            font-size: larger;
+        }
     }
     .prosImg {
         margin: 0;

@@ -19,6 +19,7 @@
         h2 {
             text-align: center;
             margin-top: 10px;
+            font-size: large;
         }
         h1 {
             text-align: center;
@@ -28,43 +29,42 @@
         }
         hr {
             @include horizontal;
-            width: 150px;
+            width: 130px;
         }
     }
 }
 
 nav {
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     align-items: center;
-    #navbarNav {
-        margin-left: 370px;
-        #check {
-            display: none;
-        }
-        .checkbtn {
-            font-size: 30px;
-            color: black;
-            float: right;
-            line-height: 80px;
-            margin-right: 40px;
-            cursor: pointer;
-            display: none;
-        }
-        ul {
-            text-align: center;
-            li {
-                display: inline;
-                padding-right: 5px;
-                color: black;
-                a {
-                    text-decoration: none;
-                    color: black;
+    color: black;
+    width: 100%;
+    padding-bottom: .5rem;
+    .navbar-links {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display:flex;
+                    box-shadow: inset 50px 50px 500px white;
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            padding: .3rem;
+                            display: block;
+                        }
+                    }
+                    li:hover {
+                        background-color: rgb(228, 223, 216);
+                        border-radius: 10px;
+                    }
                 }
-            }
-        }
     }
     #coupleIcon {
+        position: absolute;
+        right: 50px;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -76,7 +76,22 @@ nav {
             justify-content: space-between;
         }
     }
-    padding-bottom: 10px;
+    .toggle-button {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        // display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        .bar {
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            border-radius: 10px;
+        }
+    }
 }
 
 .footer {
@@ -98,11 +113,11 @@ nav {
     }
 }
 
-@media screen and (max-width:400px) {
+@media (max-width:400px) {
     #minnesota {
-        position: relative;
-        left: -120px;
-        top: 5px;
+        position: absolute;
+        left: 1rem;
+        top: .5rem;
         a {
             h2, h1 {
                 font-size: 15px;
@@ -114,58 +129,48 @@ nav {
         }
     }
     nav {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        #navbarNav {
-            text-align: left;
-            margin-left: 0;
+        .toggle-button {
+            display: flex;
+        }
+        .navbar-links {
+            display: none;
+            width: 100%;
             position: relative;
-            .checkbtn {
-                display: block;
-                position: relative;
-                left: 160px;
-                top: -60px;
-            }
             ul {
-                position: fixed;
                 width: 100%;
-                top: 50px;
-                right: -100%;
-                text-align: center;
-                transition: all .2s;
-                margin-top: 10px;
+                flex-direction: column;
+                position: absolute;
+                top: 3.5rem;
+                z-index: 1;
+                font-size: larger;
+                font-weight: 700;
                 li {
-                    display: block;
+                    text-align: center;
                     a {
-                        font-size: 15px;
                         color: black;
-                        font-size: bold;
+                        // padding: .1rem 1rem;
                     }
                 }
             }
-            #check:checked ~ ul {
-                right: 0;
-            }
+        }
+        .navbar-links.active {
+            display: flex;
         }
         #coupleIcon {
             position: absolute;
-            top: -40px;
+            top: 1rem;
+            right: 7rem;
             font-size: small;
-            right: 100px;
         }
-    }
-    section {
-        background-color: white;
-        height: 50px;
     }
     
     .footer {
-        display: flex;
+        padding-top: 5rem;
         flex-direction: column;
         height: 100vh;
+        width: 100%;
         gap: 10px;
-        background-color: rgb(117, 85, 85);
+        background-color: rgb(68, 67, 67);
         div {
             padding-left: 5px;
             h2 {

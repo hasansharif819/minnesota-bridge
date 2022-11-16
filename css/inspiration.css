@@ -90,6 +90,8 @@
 
 @media screen and (max-width: 400px) {
   #inspiration {
+    position: relative;
+    top: 3.5rem;
     height: 230px;
   }
   #inspiration #text h2 {
@@ -113,7 +115,8 @@
     padding: 10px 20px;
   }
   .inspirationView {
-    margin: 50px 40px 20px 40px;
+    margin: 50px 45px 20px 45px;
+    padding-top: 20px;
   }
   .inspirationView h1 {
     font-size: 20px;
