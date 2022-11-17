@@ -86,12 +86,18 @@ nav .toggle-button .bar {
 }
 
 .footer {
+  position: relative;
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
   height: 200px;
   background-color: rgb(33, 33, 33);
   color: white;
+}
+.footer .bridge {
+  position: relative;
+  top: 3rem;
+  left: 0;
 }
 .footer div h2 {
   font-size: medium;
@@ -151,6 +157,7 @@ nav .toggle-button .bar {
   }
   .footer {
     padding-top: 3rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -158,6 +165,10 @@ nav .toggle-button .bar {
     gap: 10px;
     position: relative;
     background-color: rgb(68, 67, 67);
+  }
+  .footer .bridge {
+    position: relative;
+    top: 0;
   }
   .footer div {
     padding-left: 2rem;
@@ -177,6 +188,6 @@ nav .toggle-button .bar {
     margin-left: auto;
     margin-right: auto;
     background-color: gray;
-    width: 150px;
+    width: 100px;
   }
 }

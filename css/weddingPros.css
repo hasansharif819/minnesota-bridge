@@ -23,6 +23,7 @@
 .prosImg img {
   height: 500px;
   width: 100%;
+  filter: brightness(80%);
 }
 .prosImg div {
   color: white;
