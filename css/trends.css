@@ -121,6 +121,7 @@
   .magazine div hr {
     width: 200px;
     height: 3px;
+    background-color: black;
     margin-left: auto;
     margin-right: auto;
   }
