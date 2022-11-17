@@ -157,6 +157,7 @@ nav .toggle-button .bar {
   }
   .footer {
     padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     height: 100%;
