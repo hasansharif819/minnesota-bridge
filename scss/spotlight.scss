@@ -12,26 +12,29 @@
     button {
         border: 0;
         cursor: pointer;
+        background-color: white;
     }
 }
 
 .prosImg {
     position: relative;
     margin: 0 200px;
-    // img {
-    //     height: 500px;
-    //     width: 100%;
-    // }
+    img {
+        filter: brightness(60%)
+    }
     div {
         color: white;
         position: absolute;
-        top: 300px;
+        top: 350px;
         left: 200px;
         text-align: center;
         max-width: 700px;
+        font-weight: 700;
         hr {
             margin-bottom: 5px;
             width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
         h2 {
             margin-bottom: 5px;
@@ -95,17 +98,17 @@
             color: white;
             position: absolute;
             top: 200px;
-            left: 50px;
+            left: 45px;
             text-align: center;
             max-width: 500px;
             hr {
                 margin-bottom: 5px;
                 width: 200px;
-                margin-left: 30px;
+
             }
             h2 {
                 margin-bottom: 5px;
-                font-size: medium;
+                font-size: large;
             }
             p {
                 margin-top: 5px;

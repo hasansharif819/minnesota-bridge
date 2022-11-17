@@ -60,6 +60,7 @@
     button {
         border: 0;
         cursor: pointer;
+        background-color: white;
     }
 }
 
@@ -96,7 +97,8 @@
     #inspiration {
         position: relative;
         top: 3.5rem;
-        height: 230px;
+        height: 250px;
+        background-color: rgb(251, 201, 210);
         #text {
             h2 {
                 font-size: 20px;
@@ -113,6 +115,7 @@
                 padding: 5px;
                 span {
                     padding: 5px;
+                    padding-bottom: 10px;
                 }
             }
             #location {
@@ -121,7 +124,7 @@
         }
     }
     .inspirationView {
-        margin: 50px 45px 20px 45px;
+        margin: 50px 50px 20px 50px;
         padding-top: 20px;
         h1 {
             font-size: 20px;
@@ -133,6 +136,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 1.5rem;
         .singleCard {
             img {
                 width: 100%;
