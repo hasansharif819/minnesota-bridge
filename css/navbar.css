@@ -156,11 +156,10 @@ nav .toggle-button .bar {
     font-size: small;
   }
   .footer {
-    padding-top: 3rem;
-    position: relative;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     gap: 10px;
     position: relative;
@@ -171,7 +170,7 @@ nav .toggle-button .bar {
     top: 0;
   }
   .footer div {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
   .footer div h2 {
     font-size: medium;
